@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线工具箱__麓客社区</title>
+    <meta name="keywords" content="搜索优化，素材查找，文档转换，加密解密，网络安全，音乐发烧，开发工具" />
+    <meta name="description" content="麓客社区出品的在线工具箱汇聚多个领域的优质资源，包括搜索优化，素材查找，文档转换，加密解密，网络安全，音乐发烧，开发工具等各类工具的集合。" />
+    <script src="js/jquery-1.7.2.min.js"></script>   
+    <link rel="shortcut icon" href="http://file.loouk.com/favicon.ico">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+    $('#toptb a').click(function() {
+        $('#main').attr('src', $(this).attr('data'));
+                 });
+
+   $('.tool').click();
+
+   $("#toptb ul li:has(ul)").hover(function(){
+   $(this).children("ul").stop(true,true).slideDown(100);
+  },function(){
+   $(this).children("ul").stop(true,true).slideUp("fast");
+  });
+
+//设置定时器
+    setTimeout(function(){
+    var loader = document.getElementsByClassName("loader")[0];
+    loader.className="loader fadeout" ;//使用渐隐的方法淡出loading page
+    setTimeout(function(){loader.style.display="none"},100)
+    },100)//强制显示loading page 100毫s
+
+
+
+});
+</script>
+<style type="text/css">
+    *{padding:0;margin:0;    font-family: "微软雅黑";}
+html, body{
+
+    margin: 0px 0px;
+    
+    width: 100%;
+
+    height: 100%;
+}
+#toptb li>a:hover{color:#FFFFFF;}
+html{overflow-y:hidden; background:none;}
+
+#linklogo img { max-height:30px;}
+
+.topnav_pop li span {
+
+display: none;
+
+} 
+
+#toptb a{color:#999;text-decoration: none;cursor:pointer;}
+
+#toptb {
+
+    padding: 0 15px;
+
+    border-bottom: 1px solid #EFEFEF;
+
+    font: 13px/1.5 Tahoma,Helvetica,'SimSun',sans-serif;
+
+
+    height: 35px;
+
+    line-height: 35px;
+
+    color:white;
+
+    background:url(images/wenli.png);
+}
+
+.center{margin:0 20px !important;}
+.center a{color:#ffffff !important;font-weight: 600;}
+.tool {color:#ffffff !important;font-size: 18px;padding-left:8px;padding-right: 15px;}
+#toptb ul li{float:left;list-style: none;margin:0 2px;font-size: 15px;width:79px;}
+#toptb ul{overflow:hidden;margin:0 auto;width:1200px;}
+.ad_bar{background-color: #323433;color:#FFFFFF;}
+#toptb i{padding-right: 2px;}
+#navs_menu a span{display:none;}
+.down{width:248px !important;position:relative;z-index: 999;margin:0;padding:0;display:none;background-color:#1A1A1A;border-radius:5px;background:url(images/wenli.png);}
+.down li{width:80px !important;float:none;margin:0 1px !important;}
+.down li img{margin-right:2px;width:16px;height:16px;}
+.down li a{font-size: 15px;}
+
+@media (max-width:767px){
+    .xiaoshi{display:none;}
+}
+@media (min-width:768px) and (max-width:991px){    .xiaoshi{display:none;}}
+</style>
+</head>
+<body oncontextmenu=self.event.returnValue=false>
+ <!--加载项开始！-->   
+    <div class="loader">
+        <div id="cssload-pgloading">
+            <div class="cssload-loadingwrap">
+                <ul class="cssload-bokeh">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+                <p>你好!麓客</p>
+            </div>
+      </div>
+    </div>
+<!--头部开始-->
+
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr class="xiaoshi">
+    <td style=" height:25px;">
+    <div id="toptb">
+            <ul>
+            <!--1.logo开始-->
+                <li style="width:164px;"><i class="icon-briefcase icon-large"></i><a class="tool" data="new/tool.html">Online Box</a></li>
+            <!--2.搜索开始-->
+                <li><i class="icon-search "></i><a >搜索优化</a>
+                    <ul class="down">
+                        <li><img src="http://file.loouk.com/google.png" /><a data="http://s.chenjx.cn/">谷歌搜索</a></li>
+                        <li><img src="http://cdn-img.easyicon.net/favicon.ico" /><a data="http://www.easyicon.net/">Easyicon</a></li>
+                        <li><img src="http://file.loouk.com/miao.png" /><a data="https://nyaso.com/">喵搜动漫</a></li>
+                        <li><img src="http://www.kisssub.org/images/favicon/kisssub.ico" /><a data="http://www.kisssub.org/">动漫BT</a></li>
+                        <li><img src="http://bookzz.org/favicon.ico" /><a data="http://bookzz.org/">外文搜索</a></li>
+                        <li><img src="http://sucai.zcool.com.cn/favicon.ico"><a data="http://sucai.zcool.com.cn/">站酷素材</a></li>
+                        <li><img src="http://file.loouk.com/shuoshu.gif" /><a data="http://www.flvcd.com/">硕鼠视频</a></li>
+                        <li><img  src=" https://www.tlss.space/favicon.ico?v=2015-08-05"/><a data="https://www.tlss.space/">图灵搜索</a></li>
+                        <li></li>
+                        <li><i class="icon-search "></i><a data="http://www.xilinjie.com/">西林街</a></li>
+                    </ul>
+                </li>
+                <!--3.搜索开始-->
+                <li><i class="icon-lightbulb "></i><a>知识技巧</a><ul class="down">
+                        <li><img src="http://file.loouk.com/guoguo.jpg" /><a data="http://guog.org/">谷歌学术</a></li>
+                        <li><img src="http://file.loouk.com/zhihu.png" /><a data="http://zhihu.sogou.com/">知乎搜索</a></li>
+                        <li><img src="http://file.loouk.com/zhwiki-hans.png" /><a data="https://zh.wikipedia.org/">维基百科</a></li>
+                        <li><img src="http://file.loouk.com/process.png" /><a data="https://www.processon.com/">PO脑图</a></li>
+                        <li><img src="http://file.loouk.com/itellyou.cn.png" /><a data="http://www.itellyou.cn/">微软资源</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul></li>
+                    <!--4.文档开始-->
+                <li><i class="icon-lock "></i><a data="">文档处理</a>
+                  <ul class="down">
+                        <li><img src="http://cn.office-converter.com/images/favicon.ico" /><a data="http://cn.office-converter.com/">格式转换</a></li>
+                        <li><img src="https://smallpdf.com/favicon.png" /><a data="http://smallpdf.com/cn/">pdf转换</a></li>
+                        <li><img src="http://img.chinaz.com/templates/chinaz/favicon.ico" /><a data="http://tool.chinaz.com/tools/textencrypt.aspx">文件加密</a></li>
+                     </ul>
+                    </li>
+                    <!--5.音乐开始-->
+                <li><i class="icon-music "></i><a data="http://itwusun.com">无损音乐</a><ul class="down">
+                        <li><img  src="http://wusunyun.duapp.com/static/pc/css//img/favicon.ico" /><a onclick="http://ws.itwusun.com/">爱听无损</a></li>
+                        <li><img  src="https://douban.fm/favicon.ico" /><a data="https://douban.fm/">豆瓣电台</a></li>
+                        <li><img  src="http://itwusun.com/img/32.ico" /><a data="http://itwusun.com">音乐间谍</a></li>
+                        <li><i class="icon-music "></i><a data="http://www.luoo.net/">落网音乐</a></li>
+                        <li><img src="http://www.mologer.cn/favicon.ico" /><a data="http://www.mologer.cn/">音乐是岸</a></li>
+                        <li><i class="icon-headphones"></i><a data="http://www.rui123.com/">梵高耳朵</a></li>
+                        <li><img src="http://file.loouk.com/mai.png" /><a data="http://www.mtyyw.com">麦田音乐</a></li>
+                    </ul>
+                    </li>
+                    <!--6.读物开始-->
+                <li><i class="icon-book "></i><a data="http://www.jiumodiary.com/">在线读物</a>
+                    <ul class="down">
+                        <li><i class="icon-search "></i><a data="http://www.jiumodiary.com/">鸠摩搜书</a></li>
+                        <li><img src="http://readcolor.com/assets/favicon-75d9e3597460b570d2dc15261b6162b7.ico" /><a data="http://readcolor.com/">读远阅读</a></li>
+                        <li><img src="http://kankandou.com/favicon.ico" /><a data="http://kankandou.com/">看kindle</a></li>
+                        <li><i class="icon-book "></i><a data="http://www.52duzhe.com/">读者在线</a></li>
+                        <li><img src="http://madbrief.com/wp-content/uploads/2013/03/madbrief_icon.png" /><a data="http://madbrief.com/">疯狂简报</a></li>
+                        <li><img src="http://www.qdaily.com/favicon.ico" /><a data="http://www.qdaily.com/">好奇心报</a></li>
+                        <li><img src="http://file.loouk.com/yilin.jpg" /><a data="http://www.92yilin.com/">意林在线</a></li>
+                        <li><img src="http://file.loouk.com/zui.jpg" /><a data="http://www.92gushi.com/">最推理</a></li> <li><img src="http://www.dooland.com/favfortask.ico" /><a data="http://dw.dooland.com/#top2">大众网络</a></li>
+                    </ul>
+                </li>
+                <!--7.素材开始-->
+                <li><i class="icon-picture "></i><a data="http://www.hituyu.com/">优秀素材</a><ul class="down">
+                        <li><img src="https://static-videos.pexels.com/assets/favicon-2ba0a9cd672c38bb97377db4ed19fb743d0c3c3d4a5db05585b1aaca913301db.ico"/><a data="https://videos.pexels.com/">PEXELS</a></li>
+                        <li><img src="http://file.loouk.com/distill.jpg" /><a onclick="http://www.wedistill.io/">DsiTill</a></li>
+                        <li><img src="https://pixabay.com/favicon-16x16.png" /><a onclick="https://pixabay.com/">Pixabay</a></li>
+                        <li><img src="http://huaban.com/img/touch-icon-iphone.png"><a data="http://www.huaban.com">花瓣</a></li>
+                        <li><img src="http://file.loouk.com/zls.png" /><a data="http://qrohlf.com/trianglify-generator/">栅格背景</a></li>
+                        <li><img src="http://img.lanrentuku.com/img/images/apple-touch-icon.png" /><a data="http://www.lanrentuku.com/">懒人图库</a></li>
+                        <li><img src="http://preloaders.net/favicon.ico" /><a data="http://preloaders.net/en/people_and_animals">载入动画</a></li>
+                        <li><img src="http://file.loouk.com/qiantu.png" /><a data="http://www.58pic.com/">千图网</a></li>
+                        <li></li>
+                        <li></li>
+                    </ul></li>
+                    <!--8.工具开始-->
+                <li><i class="icon-code "></i><a data="https://tool.lu/coderunner/">开发工具</a>
+                <ul class="down">
+                        <li><i class="icon-code "></i><a data="http://www.zaole.net/">H5/css3</a></li>
+                        
+                        <li><img src="http://weibo.com/favicon.ico" /><a data="http://dwz.wailian.work/">短网址</a></li>
+                        <li><img src="http://img.chinaz.com/templates/chinaz/favicon.ico" /><a data="http://tool.chinaz.com/">站长工具</a></li>
+
+                    </ul></li>
+                    <!--9.网络安全开始-->
+                <li><i class="icon-laptop "></i><a data="">网络安全</a><ul class="down">
+                        <li><img src="http://file.loouk.com/ali.png" /><a data="http://alibench.com/">阿里测</a></li>
+                        <li><img src="http://file.loouk.com/qiyun.png" /><a data="http://ce.cloud.360.cn">奇云测</a></li>
+                        <li><img src="http://www.speedtest.cn/assets/ico/apple-touch-icon-precomposed.png" /><a data="http://www.speedtest.cn">云测速</a></li>
+                        <li><img src="http://file.loouk.com/aizhan.png" /><a data="http://www.aizhan.com/">爱站优化</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul></li>
+                    <!--10.科学上网开始-->
+                <li><i class="icon-google-plus "></i><a data="">科学上网</a></li>
+                <!--11.图像开始-->
+                <li><i class="icon-camera-retro "></i><a data="http://zhitu.isux.us/">图像编辑</a><ul class="down">
+                        <li><img src="http://zhitu.isux.us/assets/compress/img/logo-s.ico"/><a>智图压缩</a></li>
+                        <li><img src="https://cdn.tinypng.com/images/favicon.ico?c02bdf6" /><a data="https://tinyjpg.com/">TinyJpg</a></li>
+                        <li><img src="" /><a data=""></a></li>
+                        <li><img src="http://www.peise.net/favicon.ico" /><a data="http://www.peise.net/tools/web/">在线配色</a></li>
+                        <li><img src="http://file.loouk.com/meitu.png" /><a data="http://xiuxiu.web.meitu.com/">在线P图</a></li>
+                        <li><img src="http://flipanim.com/gfx/logo_fb.png" /><a data="http://flipanim.com">手绘风格</a></li>
+                    </ul></li>
+                    <!--12.图像开始-->
+                <li><i class="icon-warning-sign "></i><a data="">免责申明</a></li>
+            </ul>
+    </div>
+
+
+
+    </td>
+
+    </tr>
+
+<!--框架开始-->
+    <tr><td height="100%">
+
+    <iframe id="main" frameborder="0" scrolling="yes" name="main"  height="100%" style="height:100%; visibility: inherit; width: 100%; z-index: -1;overflow: visible;"></iframe>
+
+    </td>
+
+    </tr>
+
+</table>
+</body>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"麓客社区出品的在线工具箱汇聚多个领域的优质资源，包括搜索优化，素材查找，文档转换，加密解密，网络安全，音乐发烧，开发工具等各类工具的集合。赶紧来体验一番吧！","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</html>
